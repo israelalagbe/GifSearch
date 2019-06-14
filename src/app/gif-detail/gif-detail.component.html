@@ -1,0 +1,6 @@
+<div *ngIf='gif|async;let gif'>
+    <h3>Title: {{gif.title}}</h3>
+    <h3>URL: {{gif.images.original.url}}</h3>
+    <img [src]="safeURL(gif.images.original.url)" />
+</div>
+

@@ -1,4 +1,10 @@
-<div>
+<div class="row">
     <!-- Implement result list here -->
-    Results List
+
+    <div class="col-lg-4 col-md-4 col-sm-4 item" *ngFor='let gif of gifs|async' (click)='open(gif)'>
+        <img [src]="safeURL(gif.images.original.url)" />
+    </div>
+    <ng-template #elseTemplate>
+        Content displayed if expression returns false
+    </ng-template>
 </div>

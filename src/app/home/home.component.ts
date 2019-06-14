@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { GifService } from '../services/gif.service';
 
 @Component({
-    selector: 'app-search-field',
+    selector: 'app-home-page',
     // selector: 'app-root',
-    templateUrl: './search-field.component.html',
-    styleUrls: ['./search-field.component.css']
+    templateUrl: './home.component.html',
 })
-export class SearchFieldComponent implements OnInit {
+export class HomeComponent implements OnInit {
     name = 'Search Field';
     keyword = '';
     constructor(private gifService: GifService) {
